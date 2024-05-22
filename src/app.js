@@ -7,5 +7,17 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  let carta = [1, 2, 3, 4, 5, 6, 7, 8, 9, "j", "q", "k"];
+  let palos = ["♦", "♥", "♠", "♣"];
+
+  let cartaRandom = Math.floor(Math.random() * carta.length);
+  let cartaElegida = carta[cartaRandom];
+  let paloRandom = Math.floor(Math.random() * palos.length);
+  let paloElegido = palos[paloRandom];
+  let palo = document.getElementById("palo");
+  palo.innerHTML = paloElegido;
+  let number = document.getElementById("number");
+  number.innerHTML = cartaElegida;
+  let palo2 = document.getElementById("palo2");
+  palo2.innerHTML = paloElegido;
 };
