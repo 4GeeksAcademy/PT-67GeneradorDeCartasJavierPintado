@@ -11,7 +11,27 @@ body {
   width: 200px;
   height: 300px;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
 }
 .palo {
-  background-color: red;
+  font-size: 3rem;
+}
+.palo.top {
+  align-self: flex-start;
+}
+.palo.bottom {
+  align-self: flex-end;
+}
+.number {
+  font-size: 6rem;
+}
+.palo.red {
+  color: red;
+}
+.palo.black {
+  color: black;
 }

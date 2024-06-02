@@ -16,8 +16,20 @@ window.onload = function() {
   let paloElegido = palos[paloRandom];
   let palo = document.getElementById("palo");
   palo.innerHTML = paloElegido;
+
   let number = document.getElementById("number");
   number.innerHTML = cartaElegida;
   let palo2 = document.getElementById("palo2");
   palo2.innerHTML = paloElegido;
+  if (paloElegido == "♥" || paloElegido == "♦") {
+    palo.classList.add("red");
+    palo.classList.remove("black");
+    palo2.classList.add("red");
+    palo2.classList.remove("black");
+  } else {
+    palo.classList.add("black");
+    palo.classList.remove("red");
+    palo2.classList.add("black");
+    palo2.classList.remove("red");
+  }
 };
